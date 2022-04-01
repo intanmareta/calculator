@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  </head>
+  <body>
+          <div class="calculator">
+            <div class="display">
+            <p id="output">0</p>
+      </div>
+
+<div class="calculator-keys">
+<div class="row">
+   <button id="all-clear" style="width: 200px;"onclick="clearOutput()">AC</button>
+   <button id="percentage" onclick="perac()">%</button>
+   <button id="operator" onclick="fordisplay('/')">&divide;</button>
+</div>
+<div class="row">
+   <button id="number" onclick="fordisplay('7')">7</button>
+   <button id="number" onclick="fordisplay('8')">8</button>
+   <button id="number" onclick="fordisplay('9')">9</button>
+   <button id="operator" onclick="fordisplay('*')">&times;</button>
+</div>
+<div class="row">
+   <button id="number" onclick="fordisplay('4')">4</button>
+   <button id="number" onclick="fordisplay('5')">5</button>
+   <button id="number" onclick="fordisplay('6')">6</button>
+   <button id="operator" onclick="fordisplay('-')">-</button>
+</div>
+<div class="row">
+   <button id="number" onclick="fordisplay('1')">1</button>
+   <button id="number" onclick="fordisplay('2')">2</button>
+   <button id="number" onclick="fordisplay('3')">3</button>
+   <button id="operator" onclick="fordisplay('+')">+</button>
+</div>
+<div class="row">
+  <button id="number" style="width: 200px;"onclick="fordisplay('0')" >0</button>
+  <button id="decimal onclick="fordisplay('.')">.</button>
+  <button id="equal-sign" onclick="solve()">=</button>
+</div>
+          </div>
+      </div>
+       <script src="script.js"></script>
+  </body>
+</html>
